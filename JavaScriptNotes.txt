@@ -1,0 +1,16 @@
+==========================JavaScript===========================
+
+> JavaScript which is often known as JS, is a high-level dynamic
+interpreted programming language.
+> It allows client-side scripting to create completely dynamic web 
+applications and websites.
+--------------------------------------------------------------------
+
+=> JavaScript was initially designed for making pages "alive".
+=> scripts was be executed in the browser itself.
+=> JavaScript and java are different programming language.
+=> it can be executed on the browser as well as the server.
+=> JavaScript is a safe language when used in browser.
+=> There are languages that get "transpiled" to JavaScript.
+=> if need to run js program outside the browser then node js required
+for executed js program.
