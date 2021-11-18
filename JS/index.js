@@ -152,6 +152,11 @@ var arr = [1,2,3,4,5,6,7,8];
 //     console.log(x);
 // })
 
+// let string =["Java","Javascript","Python"];
+// string.forEach(/.,p-function(x){
+//     console.log(x);
+// })
+
 
 
 
@@ -227,14 +232,14 @@ var arr = [1,2,3,4,5,6,7,8];
 
 //===================Date====================
 
-// let myDate = new Date();
+let myDate = new Date();
 
-// console.log(myDate);
-// console.log(myDate.getTime());
-// console.log(myDate.getFullYear());
-// console.log(myDate.getDay());
-// console.log(myDate.getMinutes());
-// console.log(myDate.getHours());
+console.log(myDate);
+console.log(myDate.getTime());
+console.log(myDate.getFullYear());
+console.log(myDate.getDay());
+console.log(myDate.getMinutes());
+console.log(myDate.getHours());
 
 
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM--------->Document Object Model:</h1>
+
+    <ul>
+        <li class ="c1 lst1">List 1</li>
+        <li id="secondItem">List 2</li>
+        <li class ="c1">List 3</li>
+    </ul>
+    <h2>Heading 1</h2>
+    <h2>Heading 2</h2>
+    <h2>Heading 3</h2>
+
+
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+
+
+    <!-- <script src="./JS/dom.js">
+       
+    </script> -->
+
+    <script>
+        // if id not present then it return null.
+        // let ele= document.getElementById("secondItem");
+        // console.log(ele);
+        // console.log("HelloWorld");
+        // console.log(ele.innerHTML); it work getter and setter both
+        // ele.innerHTML = "<p>HelloWorld!</p>";
+
+
+        // let ele = document.getElementsByClassName('c1');
+        // let ele = document.getElementsByClassName('c1 lst1');// we can select element of multiple classes.
+        // console.log(ele);
+        // console.log(ele.length);
+        // for(let i=0;i<ele.length;i++){
+        //     ele[i].innerHTML="<p>HelloGuys!</p>";
+        // }
+
+        // ----------------------------Select Element by tag Name-------------------------
+            let ele = document.getElementsByTagName("h2");
+
+            for(let i=0;i<ele.length;i++){
+                ele[i].innerHTML="Hii!";
+            }
+            for(let i=0;i<ele.length;i++){
+                console.log(ele[i].innerHTML);
+            }
+    </script>
+</body>
+</html>

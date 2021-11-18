@@ -243,7 +243,7 @@ with string.
 // console.log(str.toUpperCase());
 // console.log(str.toLowerCase());
 
-//substr(): it take two arguments, starting and number of character ot slice
+//substr(): it take two arguments, starting and number of character to slice
 // console.log(str.substr(0,4));
 // console.log(str.substr(4,6));
 
@@ -395,10 +395,152 @@ with string.
 
 //syntax:string.search()substring).
 
-let string = 'I love javascript. if you do not love javascript what else can you love';
-console.log(string.search('java'));
-console.log(string.search('love'));//without any flag
-console.log(string.search(/love/gi)); //g->means to search in the whole text, i -> case insensitive
-console.log(string.search('do'));
-console.log(string.search('javascript/gi'));
+// let string = 'I Love javascript. if you do not love javascript what else can you love';
+// console.log(string.search('java'));
+// console.log(string.search('love'));//without any flag
+// console.log(string.search(/love/gi)); //g->means to search in the whole text, i -> case insensitive
+// console.log(string.search('do'));
+// console.log(string.search('javascript/gi'));
 
+
+
+//mathc(): take substring/regular_expression_patter and it return an array if there is match if not return null
+//syntax: string.match(pattern) or string.match(substring);
+/*
+let us see how a regular expression pattern looks like. It start with /
+sign and end with / sign.
+
+let string ='love';
+let patternOne=/love/  //without any flag
+let patternTwo=/love/gi //g-menas to serach in the whole text,i-case insensitive.
+*/
+
+
+
+// let string ='I love JavaScript. I you do not love JavaScript what else can you love.';
+// console.log(string.match('love'));
+// console.log(string.match('JavaScript'));
+// console.log(string.match('sheesh'));
+
+
+
+
+/*
+let's extract numbers from text using a regular expression.
+let txt = "In 2019, i ran 30 Days of Python. Now, in 2020 I am super exited to start this challenge";
+let regEx = /\d+/
+
+d with escape character means d not a normal d instead act a digit
++ means one or more digit numbers,
+if there is g after that it mean global, search everywhere.
+*/
+
+// let txt = "In 2019, i ran 30 Days of Python. Now, in 2020 I am super exited to start this challenge";
+// let regEx = /\d+/;
+// console.log(txt.match(regEx));
+// // console.log(txt.match(/\d+/));
+// console.log(txt.match(/\d+/g));
+
+
+
+
+
+
+
+
+
+
+
+
+
+//repeat(): it takes a number as argument and it returns the repeated version of the string.
+//syntax: string.repeat(n)
+
+// let string = 'love';
+// console.log(string.repeat(5));//it repeate love 5 times
+
+
+
+//========================================Data Types and Casting===========================================
+// let firstName = "Sheeshpal";
+// let lastName = "Singh";
+// let country = "India";
+// let city = "Dhanaura";
+// let age = 22;
+// let job;
+
+// console.log(typeof 'sheeshpal');
+// console.log(typeof firstName);
+// console.log(typeof 10);
+// console.log(typeof 3.12);
+// console.log(typeof true);
+// console.log(typeof false);
+// console.log(typeof NaN);
+// console.log(typeof job);
+// console.log(typeof null);
+// console.log(typeof age);
+
+
+//Data type coversion
+/* 
+Cascating: converting one data type to another data type. We use 
+->parseInt()
+->parseFloat()
+->Number()
+->+sign
+->str()
+
+when we do arithmetic operations string numbers should be first converted to
+integer or float if not it return an error.
+
+
+
+->we can convert string number to another.
+->Any number inside a quote is a string number. like '12', '13' etc.
+    -parseInt()
+    -Number()
+    -Plus sign(+)
+
+*/
+
+
+// let num ='10';
+// let numInt = parseInt(num);
+// console.log(numInt);
+
+// let num2 = '12';
+// let numInt2 = +num2;
+// console.log(numInt2);
+// console.log(typeof num2);
+// console.log(typeof numInt2);
+
+
+
+//------------string to float-----------
+// let num = '9.81';
+// let numFloat = parseFloat(num);
+// console.log(numFloat);
+// console.log( typeof numFloat);
+
+// let num2 = '3.14';
+// let pi = Number(num2);
+// console.log(pi);
+// console.log(typeof pi);
+
+
+// ---------------Float to Int----------------
+//we can convert float numbers to integers. we use parseInt();
+
+// let num = 9.81;
+// let numInt = parseInt(num);
+// console.log(numInt);
+
+
+// =========================================== Day-2 Exercise ================================
+
+let challenge = "30 Days Of JavaScript";
+console.log(challenge);
+console.log(challenge.length);
+console.log(challenge.toUpperCase());
+console.log(challenge.toLowerCase());
+console.log(challenge.substr(3,challenge.length));
