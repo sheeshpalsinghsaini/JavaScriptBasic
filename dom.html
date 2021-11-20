@@ -9,19 +9,67 @@
 <body>
     <h1>DOM--------->Document Object Model:</h1>
 
-    <ul>
+    <!-- <ul>
         <li class ="c1 lst1">List 1</li>
         <li id="secondItem">List 2</li>
         <li class ="c1">List 3</li>
-    </ul>
-    <h2>Heading 1</h2>
-    <h2>Heading 2</h2>
-    <h2>Heading 3</h2>
+    </ul> -->
 
 
-    <p>Paragraph 1</p>
+    <!-- <h2 class ="intro">Heading 1</h2>
+    <div id="div1">
+     <p class ="intro">Paragraph 1</p>
+    <h2 class ="intro">Heading 2</h2>
     <p>Paragraph 2</p>
-    <p>Paragraph 3</p>
+    <h2>Heading 3</h2> 
+    <p class ="intro">Paragraph 3</p>
+    </div> -->
+
+    <!-- <ul >
+        <li>List 1</li>
+        <li id="intro">List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+    
+    <ul>
+        <li>List a</li>
+        <li>List b</li>
+        <li>List c</li>
+        <li>List d</li>
+    </ul> -->
+
+
+
+    <div id="intro">
+        <p>Hello ! this is a paragraph tag</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- <script src="./JS/dom.js">
@@ -46,14 +94,112 @@
         // }
 
         // ----------------------------Select Element by tag Name-------------------------
-            let ele = document.getElementsByTagName("h2");
+            // let ele = document.getElementsByTagName("h2");
 
-            for(let i=0;i<ele.length;i++){
-                ele[i].innerHTML="Hii!";
-            }
-            for(let i=0;i<ele.length;i++){
-                console.log(ele[i].innerHTML);
-            }
+            // for(let i=0;i<ele.length;i++){
+            //     ele[i].innerHTML="Hii!";
+            // }
+            // for(let i=0;i<ele.length;i++){
+            //     console.log(ele[i].innerHTML);
+            // }
+
+            // let div1 = document.getElementById("div1");
+            // let ele = div1.getElementsByTagName("h2");
+            // for(let i=0;i<ele.length;i++){
+            //     ele[i].innerHTML="Well Done!";
+            // }
+
+
+            // =================================querySelector============================================== 
+            // let ele = document.querySelector("p.intro")//which p tage which have intor class. this is access only first tag. for multiple section use allquery.
+            // console.log(ele);
+            // ele.innerHTML="querySector workd done";
+
+
+            // let ele = document.querySelectorAll("p.intro");//this work for all tag.
+            // console.log(ele);
+            // for(let i=0;i<ele.length;i++){
+            //     ele[i].innerHTML = "querySector done"
+            // }
+
+
+
+            // =====================Traversing Elements========================================== 
+            //select any element with the help of anyone[indirect selection]
+            
+            // let ele = document.getElementById("intro");
+            // // console.log(ele);
+            // //select parent element
+            // let prt = ele.parentElement;
+            // console.log(prt);
+            // prt.innerHTML="ParentElement Selctor worked Perfectly";
+
+            // =============================Selecting Childreens================================= 
+            // let ele = document.getElementById("intro");
+            // let firstChild = ele.firstElementChild;//select first child
+            // let lastChild = ele.lastElementChild;//select last child
+            // let allChildrens = ele.children;//select all childrens
+            // console.log(ele);
+            // console.log(firstChild);
+            // console.log(lastChild);
+            // console.log(allChildrens);
+
+
+
+            // =================================Sibling Selections================================= 
+
+                // let ele = document.getElementById("intro");
+                // let prevSibling = ele.previousElementSibling;
+                // let nextSibling = ele.nextElementSibling;
+
+                // console.log(prevSibling);
+                // console.log(nextSibling);
+                // console.log(ele);
+
+
+            // =====================================Manipulation[innerHTML]========================== 
+                //innerHTML is a properties not a mehtod.
+
+
+                //fetch/get tag using innerHTML
+            // let ele = document.getElementById("intro");
+            // let content = ele.innerHTML;
+
+            // console.log(content);
+
+
+            //set tag using innerHTML.
+
+            // let ele = document.getElementById("intro");
+            // ele.innerHTML = "<h1>This is a H1 Heading</h1>";
+
+
+
+            // =================================create and append element=================================== 
+            /*append means whatever content is present, add new content from next line or from front of it. not delete previous.
+                ele.innerHTML same is ele.textContent both are same.
+            */
+
+            // let ele = document.getElementById("intro");
+            // let h1 = document.createElement("h1");
+            // ele.appendChild(h1);
+            
+            // let text = document.createTextNode("This is H1 Tag");
+            // h1.textContent ="This is H1 Heading which is created by JavaScript. Thanks you to visit it!";//add content by properties.
+            // h1.append(text);
+            // h1.appendChild(text);
+
+            // ---------------add class -----------------
+            // h1.className = "try";//for multiple class write down with space seperated.
+            // h1.className = "try pi";
+            // h1.id="intro2";
+
+
+            // for add in body select by document and add child 
+            // let h1 = document.createElement("h1");
+            // h1.textContent ="This is H1 Heading which is created by JavaScript. Thanks you to visit it!";//add content by properties.
+            // document.body.appendChild(h1);//append in body last
+
     </script>
 </body>
 </html>
