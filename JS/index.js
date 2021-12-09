@@ -9,7 +9,11 @@
 // console.log(sum);
 // document.write(sum);
 
+// let sdiv = document.getElementById("second");
 
+// sdiv.innerHTML="HelloWorld";
+// sdiv=document.write("HelloWord");
+// sdiv=document.write("HelloWord");
 // ========================================
 //data Types in javaScript
 // There are two types of data types in JavaScript
