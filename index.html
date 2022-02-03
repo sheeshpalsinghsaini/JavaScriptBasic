@@ -4,64 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Tutorials</title>
+    <title>Practice of JS DOM</title>
     <style>
-        *{
-            margin:0;
-            padding: 0;
-        }
-        .container{
-
-            border:2px solid red;
-            margin: 3px 0px;
-            background-color: cyan;
-            padding: 9px;
-        }
-        .bg-primary{
-            background-color:blueviolet;
-        }
-        .text-success{
-            color:white;
+        body{
+            background-color: gray;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to JavaScript Tutorials</h1>
-    <h1>This is Heading One</h1>
+    <ul>
+        <li>list-1</li>
+        <li id="first">list-2</li>
+        <li>list-3</li>
+        <li>list-4</li>
+    </ul>
+    
+    <script>
+        let ele = document.getElementById("first");
+        let preNode = ele.previousElementSibling;
+        let nextNode = ele.nextElementSibling;
 
-    <div id="firstContainer" class="container">
-        <button id="click" onclick="clicked()">ClickMe</button>
-        <p>this is a pragragraph</p>
-    </div>
-    <div class="container">
-        <p>This is Second Container</p>
-    </div>
-    <!-- Majarly JS link bottom in html body section -->
-   <!-- <script>
-       console.log("Hello, World");
-   </script> -->
-   <br>
-   <br>
-   <!-- Using JavaScript inside HTML using script tag -->
-   <!-- <script>
-       console.log("Hello, world");
-
-       //print number and string both beside
-       console.log("Hellow Word",8+13,"Another log")
-    //    alert("me");
-    //for Writting anythings on display used document.write method
-
-    document.write("This is Document write method");
-    //for show warning used "warn method"
-    console.warn("This is Warning");
-    //for showing error
-    console.error("This is an error");
-
-
-
-   </script> -->
-
-   <!-- Link JavaScript in HTML PAGE -->
-   <script src="/JS/index.js">//link javascript file</script>
+        console.log(preNode);
+        console.log(nextNode);
+        
+        
+    </script>
 </body>
 </html>
